@@ -1,0 +1,9 @@
+从下面链接下载模型
+https://github.com/Arthur151/ROMP/releases/download/v1.1/model_data.zip
+下载完成后将 parameters文件夹下的下列文件复制到models\smpl目录下 
+J_regressor_extra.npy
+J_regressor_h36m.npy
+SMPL_NEUTRAL.pkl
+smplfaces.npy
+
+如果下载链接缺少相关文件，请选手查看ROMP主页的安装说明重新下载相关文件。https://github.com/Arthur151/ROMP

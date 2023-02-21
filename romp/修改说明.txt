@@ -1,0 +1,14 @@
+模型网址
+https://github.com/Arthur151/ROMP
+
+提取参数需要修改的文件
+\ROMP-master\romp\predict\video.py
+\ROMP-master\romp\predict\base_predictor.py
+
+在第68行的for循环中添加逐帧保存视频帧姿态参数的代码
+通过调用base_predictor.py文件中的reorganize_results函数从模型输出结果中解析姿态参数
+
+
+参数格式：
+将视频参数保存为(FrameNum,72)格式的姿态序列，并对smpl模型中的根节点朝向调整至正方
+向后作为识别模型的输入。选手可以使用ChangeGlobalOrientation2forward.py进行根关节朝向调整。
